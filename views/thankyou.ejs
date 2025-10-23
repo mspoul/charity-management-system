@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+     
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      height: 300px;
+      width: 400px;
+    }
+
+    .container h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .container p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #ecf0f1;
+    }
+
+    .container a {
+      text-decoration: none;
+    }
+
+    .container button {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #2ecc71;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .container button:hover {
+      background-color: #27ae60;
+      transform: scale(1.05);
+    }
+
+    .container button:active {
+      background-color: #229954;
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank You!</h1>
+    <p>We will contact you soon.</p>
+    <a href="http://localhost:3002/Home">
+      <button>OK</button>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiary Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #ffffff; 
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            color: #ff0000;
+        }
+
+        .benifit {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #2f2f2f; 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        .close-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #f2e5e5;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .close-icon:hover {
+            color: #ff0000; 
+            font-size: 50px;
+        }
+
+        .head {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #00ff88; 
+        }
+
+        .form-floating {
+            margin-bottom: 20px;
+        }
+
+        .form-floating label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #cccccc; 
+        }
+
+        .form-floating input, .form-floating textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #444444;
+            border-radius: 6px;
+            background-color: #1c1c1c; 
+            color: #ffffff; 
+        }
+
+        .form-floating textarea {
+            resize: none;
+        }
+
+        .form-floating input::placeholder, .form-floating textarea::placeholder {
+            color: #888888; 
+        }
+
+        input[type="file"] {
+            color: #cccccc;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: #00ff88; 
+            color: #1c1c1c; 
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00cc66; 
+        }
+    </style>
+</head>
+<body>
+    <div class="benifit">
+        <a href="/Home" class="close-icon">&times;</a> 
+        <h1 class="head">Beneficiary Form</h1>
+        <form method="post" action="/uploaded" enctype="multipart/form-data">
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Enter Your Full Name</label>
+                <input name="name" type="text" id="floatingInput" placeholder="Enter Your Name">
+            </div>
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Age</label>
+                <input name="age" type="number" id="floatingInput" placeholder="Enter Your Age">
+            </div>
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Email address</label>
+                <input name="email" type="email" id="floatingInput" placeholder="Enter Your Email">
+            </div>
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Enter Mobile Number</label>
+                <input name="mobile" type="number" id="floatingInput" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Address</label>
+                <input name="address" type="text" id="floatingInput" placeholder="Enter Your Permanent Address">
+            </div>
+            <div class="form-floating mb-3">
+                <label for="floatingInput">Problem</label>
+                <input name="problem" type="text" id="floatingInput" placeholder="Enter Your Problem">
+            </div>
+            <div class="form-floating">
+                <label for="floatingTextarea2">Describe Your Need</label><br>
+                <textarea name="description" placeholder="Leave a description here" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <p>[Note:-Upload valid documents, it includes Income, Medical Certificate ]</p>
+            <br>
+            
+            <input name="document" type="file" id="floatingInput" placeholder="Upload here">
+            <br>
+            <br>
+    
+            <button type="submit" class="btn">Submit Details</button>
+        </form>
+    </div>
+</body>
+</html>
